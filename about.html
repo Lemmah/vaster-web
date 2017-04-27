@@ -19,7 +19,7 @@
             stringsElement: document.getElementById('typed-strings'),
             typeSpeed: 30,
             backDelay: 500,
-            loop: false,
+            loop: true,
             contentType: 'html', // or text
             // defaults to null for infinite loop
             loopCount: null,
@@ -123,15 +123,40 @@
 
   <div class="container">
     <div class="section">
-      <div class="type-wrap">
-            <div id="typed-strings">
-                <span>Typed.js is a <strong>JavaScript</strong> library.</span>
-                <p>It <em>types</em> out sentences.</p>
-                <p>And then deletes them.</p>
-                <p>Try it out!</p>
+      <div class="type-wrap center">
+            <br/>
+            <h1 class="header center"><span class="blue-text text-lighten-1">Vaster </span>Technologies</h1>
+            <div id="typed-strings" >
+                <span>This is <strong>Vaster</strong> Technologies.</span>
+                <p>We<em> empower </em> the future.</p>
+                <p>We believe in small beginings.</p>
+                <p>We work with you to make you greater.</p>
+                <p>We help you grow without the pains of growth.</p>
+                <p>We are Vaster, we believe in vastness.</p>
+                <p>Let's go Vaster together!</p>
             </div>
-            <span id="typed" style="white-space:pre;"></span>
+            <span id="typed" style="white-space:pre;font-size: 22px;" class=""></span>
     </div>
+    <br/>
+    <!-- Hidden Social Media Icons to be unveiled by a short JS script -->
+     <div hidden class="row center" id="social-icons">
+            <a href="#" class="btn-floating btn-large waves-effect waves-light blue darken-4"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="btn-floating btn-large waves-effect waves-light red white-text"><i class="material-icons">mail</i></a>
+            <a href="#" class="btn-floating btn-large waves-effect waves-light grey" ><i class="fa fa-instagram"></i></a>
+            <a href="#" class="btn-floating btn-large waves-effect waves-light green darken-2" ><i class="fa fa-whatsapp"></i></a>
+            <a href="#" class="btn-floating btn-large waves-effect waves-light blue"><i class="fa fa-twitter"></i></a>
+      </div>
+      <div class="row center" id="connect">
+            <a onclick="showSocial()" id="download-button" class="btn-large waves-effect waves-light blue lighten-2">Let's Connect!</a>
+            <script type="text/javascript">
+              function showSocial(){
+                var connect = document.getElementById("connect");
+                var hide = document.createAttribute("hidden");
+                connect.setAttributeNode(hide);
+                document.getElementById("social-icons").removeAttribute("hidden");
+              }
+            </script>
+      </div>
     </div>
   </div>
 
@@ -184,6 +209,8 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <!-- Font Awesome Icons -->
+  <script src="https://use.fontawesome.com/a6803cef02.js"></script>
 
   </body>
 </html>
