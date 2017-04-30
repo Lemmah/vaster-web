@@ -43,6 +43,10 @@ p {
   #index-banner .section {
     top: 0;
   }
+  #index-banner .header{
+    font-size: 44px;
+  }
+
 }
 
 .icon-block {
@@ -55,3 +59,34 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+nav, body, #nav-mobile, .social-icons{
+  background-image: url("../img/background01.png");
+  background-repeat: repeat;
+}
+.social-icons{
+  padding: 4px;
+  border-radius: 40px;
+}
+
+#index-banner{
+  background-image: url("../img/spiralvast.jpg");
+}
+
+/* recoloring the tabs*/
+.tabs .tab a{
+    color:#00ACC1;
+}
+.tabs .tab a:hover,.tabs .tab a.active {
+  background-color:transparent;
+  color:#008B9B;
+}
+.tabs .tab.disabled a,.tabs .tab.disabled a:hover {
+  color:rgba(102,147,153,0.7);
+}
+.tabs .indicator {
+  background-color:#009BAD;
+}
+ .m4 .card-content p, .page-footer .grey-text {
+  text-align: justify;
+ }
